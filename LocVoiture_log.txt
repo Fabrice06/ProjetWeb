@@ -6,3 +6,7 @@ Erreur 1054: Unknown column 'snom' in 'field list'
  > fonction findVehicules
  > exception lancée de la ligne 38
 ***********************************************
+sfsfsf
+sfsf
+sfs
+fsf

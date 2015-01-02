@@ -2,7 +2,7 @@
 
 	/**
 	 *
-	 * @file vue_compte.php
+	 * @file vue_connexion.php
 	 * 
 	 * @brief vue associée à l'entité compte
 	 *
@@ -14,21 +14,21 @@
 
 	/**
 	 *
-	 * propose une vue correspondant à l'ihm compte
+	 * propose une vue correspondant à l'ihm connexion
 	 */
-	class VueCompte extends Vue {
+	class VueConnexion extends Vue {
 
 		/**
 		 *
 		 * @param Session $pSession
 		 */
 		public function __construct(Session $pSession) {
-			parent::__construct('compte', $pSession);
+			parent::__construct('connexion', $pSession);
 		}
 
 		/**
 		 *
-		 * intègre le modèle de données dans l'ihm compte
+		 * intègre le modèle de données dans l'ihm connexion
 		 */
 		public function afficher() {
 

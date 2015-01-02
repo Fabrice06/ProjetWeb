@@ -49,7 +49,15 @@
 		 * @return string du bloc contenu
 		 */
 		public function readContenu($pStmt, $pFichier) {
+			
+			// checkme [vince] code très moyen ! voir si on garde dans le futur
+			if($pFichier == 'fiche.php') {
 
+				if(!$pStmt-> bind_result($nContenuNom, $nContenuNbPlace, $nContenuClasse)) {
+					throw new SqlException($nStmt-> error, $nStmt-> errno);
+				} // if
+			} // if
+			
 			ob_start();
 			require_once((parent::getFolderContenu()).$pFichier);
 		

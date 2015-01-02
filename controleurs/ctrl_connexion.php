@@ -2,9 +2,9 @@
 
 	/**
 	 * 
-	 * @file   ctrl_compte.php
+	 * @file   ctrl_connexion.php
 	 * 
-	 * @brief contrôleur associé à l'entité compte
+	 * @brief contrôleur associé à l'entité connexion
 	 * 
 	 * @author vince
 	 */
@@ -13,15 +13,15 @@
 	require_once(FOLDER_INCLUDE.'people.php');
 	require_once(FOLDER_INCLUDE.'activite.php');
 	
-	require_once(FOLDER_MODELE.'mdl_compte.php');
-	require_once(FOLDER_VUE.'vue_compte.php');
+	require_once(FOLDER_MODELE.'mdl_connexion.php');
+	require_once(FOLDER_VUE.'vue_connexion.php');
 	require_once(FOLDER_VUE.'vue_home.php');
 
 	/**
 	 *
-	 * controleur dédié à l'ihm compte
+	 * controleur dédié à l'ihm connexion
 	 */
-	class CtrlCompte {
+	class CtrlConnexion {
 
 		private $vue;
 		private $modele;
@@ -43,7 +43,7 @@
 			$this-> proprietaire= new People();
 			$this-> proprietaire= $pSession-> getProprietaire();
 			
-			$this-> modele= new MdlCompte();
+			$this-> modele= new MdlConnexion();
 		} // constructeur
 
 		/**
@@ -86,7 +86,7 @@
 					} // if
 						
 					// tous les else
-					$this-> vue = new VueCompte($this-> session);
+					$this-> vue = new VueConnexion($this-> session);
 					$this-> vue-> afficher();
 					
 				break;

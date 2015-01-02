@@ -44,7 +44,7 @@
 				$this-> bdd= new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT);
 				
 				if($this-> bdd-> connect_errno > 0){
-					throw new BddException($this-> bdd-> connect_error);
+					throw new BddException($this-> bdd-> connect_error, $this-> bdd-> connect_errno);
 				} // if
 			} // if
 		return $this-> bdd;

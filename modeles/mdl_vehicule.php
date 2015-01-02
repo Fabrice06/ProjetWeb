@@ -30,7 +30,7 @@
 		 * @throws SqlException en cas d'échec
 		 */
 		public function findVehicules() {
-			$nSql = 'select id, snom '
+			$nSql = 'select id, nom '
 					.'from voiture '
 					.'order by nom asc';
 
@@ -52,17 +52,18 @@
 			$nSql = 'select nom, classe, nbplace '
 					.'from voiture '
 					.'where id=?';
-// todo [vince] mettre en place lea gestion des exceptions
-// 			try {
-				$nStmt= parent::getBdd()-> prepare($nSql);
 
-				$nStmt-> bind_param('i', $pId);
-			
-				$nStmt-> execute();
+			if(!$nStmt= parent::getBdd()-> prepare($nSql)) {
+				throw new SqlException(parent::getBdd()-> error, parent::getBdd()-> errno);
+			}
 
-// 			} catch (Exception $e) {
-// 				echo 'erreur findVehiculeById '. $nStmt-> errno. '  '. $nStmt-> error;
-// 			} // catch
+			if(!$nStmt-> bind_param('i', $pId)) {
+				throw new SqlException($nStmt-> error, $nStmt-> errno);
+			}
+		
+			if(!$nStmt-> execute()) {
+				throw new SqlException($nStmt-> error, $nStmt-> errno);
+			}
 		return $nStmt;
 		} // function
 		

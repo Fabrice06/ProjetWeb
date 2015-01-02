@@ -16,7 +16,8 @@
 	require_once(FOLDER_INCLUDE.'session.php');
 	
 	require_once(FOLDER_CONTROLEUR.'ctrl_agence.php');
-	require_once(FOLDER_CONTROLEUR.'ctrl_compte.php');
+	require_once(FOLDER_CONTROLEUR.'ctrl_client.php');
+	require_once(FOLDER_CONTROLEUR.'ctrl_connexion.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_erreur.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_home.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_resa.php');
@@ -57,15 +58,15 @@
 				case 'agence':
 					$nControleur= 'CtrlAgence';
 					break;					
-				
-				case 'compte':
-					$nControleur= 'CtrlCompte';
+
+				case 'client':
+					$nControleur= 'CtrlClient';
+					break;
+						
+				case 'connexion':
+					$nControleur= 'CtrlConnexion';
 					break;
 
-// 				case 'erreur':
-// 					$nControleur= 'CtrlErreur';
-// 					break;
-					
 				case 'resa':
 					$nControleur= 'CtrlResa';
 					break;
@@ -105,14 +106,7 @@
 				} // catch
 				
 			$nCtrlObjet= null;
-				
-			
-// // 				$nCtrlErreur= new CtrlErreur();
-// // 				$nCtrlErreur-> afficher($e-> getMessage());
-// // // 				if(LOGFILE_EDIT) $this-> logControleur-> add($e-> getMessage());
-// // 				$nCtrlErreur= null;
-			
-			
+	
 		} // function		
 	} // class
 ?>

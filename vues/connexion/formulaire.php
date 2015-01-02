@@ -1,5 +1,5 @@
 <h1>Bienvenue !</h1>
-<aside style="float:left; background-color: red; width: 50%;">
+<aside>
 <form method="post" action="<?= $nContenuFormControleur ?>">
 
 	<p><label for="mail">Mail:</label>
@@ -13,7 +13,6 @@
     <input name="valider" value="Valider" type="submit" /><?= $nContenuMsgAccount ?>
 </form>
 </aside>
-<article style="float:right; background-color: green; width: 50%;">
-qsdcwvwxcvsdfsvsdvfdsdv</br>
-sdfsfsfsfsfsfs</br>
+<article>
+<a href="<?= HREF_CLIENT ?>">Créer un nouveau compte</a>
 </article>

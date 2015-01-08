@@ -4,7 +4,7 @@
 	 * 
 	 * à réaliser
 	 * 
-	 * @file   vue_agence.php
+	 * @file   vue_client.php
 	 * 
 	 * @brief vue associée à l'entité agence
 	 * 

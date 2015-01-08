@@ -30,9 +30,9 @@
 		 * @throws SqlException en cas d'échec
 		 */
 		public function findVehicules() {
-			$nSql = 'select id, nom '
-					.'from voiture '
-					.'order by nom asc';
+			$nSql = 'select idVehicule, nomVehicule '
+					.'from Vehicule '
+					.'order by nomVehicule asc';
 
 			if(!$nStmt= parent::getBdd()-> query($nSql)) {
 				throw new SqlException(parent::getBdd()-> error, parent::getBdd()-> errno);
@@ -49,9 +49,9 @@
 		 * @return mysqli statement
 		 */
 		public function findVehiculeById($pId) {
-			$nSql = 'select nom, classe, nbplace '
-					.'from voiture '
-					.'where id=?';
+			$nSql = 'select nomVehicule, desriptionVehicule, nbplaceVehicule '
+					.'from Vehicule '
+					.'where idVehicule=?';
 
 			if(!$nStmt= parent::getBdd()-> prepare($nSql)) {
 				throw new SqlException(parent::getBdd()-> error, parent::getBdd()-> errno);

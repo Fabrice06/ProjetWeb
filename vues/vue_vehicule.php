@@ -10,13 +10,11 @@
 	require_once(FOLDER_VUE.'vue.php');
 
 	/**
-	 *
 	 * propose une vue correspondant à l'ihm vehicule
 	 */
 	class VueVehicule extends Vue {
 
 		/**
-		 *
 		 * @param Session $pSession
 		 */
 		public function __construct(Session $pSession) {
@@ -24,7 +22,6 @@
 		}
 
 		/**
-		 *
 		 * intègre le modèle de données dans l'ihm vehicule
 		 *
 		 * @param statement $pStmt
@@ -37,7 +34,6 @@
 		} // function
 
 		/**
-		 *
 		 * intègre le modèle de données dans le bloc contenu
 		 * 
 		 * @param statement $pStmt
@@ -50,7 +46,7 @@
 			// checkme [vince] code très moyen ! voir si on garde dans le futur
 			if($pFichier == 'fiche.php') {
 
-				if(!$pStmt-> bind_result($nContenuNom, $nContenuNbPlace, $nContenuClasse)) {
+				if(!$pStmt-> bind_result($nContenuNom, $nContenuDescription, $nContenuNbPlace, $nContenuMotorisation, $nContenuPrix)) {
 					throw new SqlException($nStmt-> error, $nStmt-> errno);
 				} // if
 			} // if

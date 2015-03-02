@@ -10,13 +10,11 @@
 	require_once(FOLDER_VUE.'vue.php');
 
 	/**
-	 *
 	 * propose une vue correspondant à l'ihm agence
 	 */
 	class VueAgence extends Vue {
 
 		/**
-		 *
 		 * @param Session $pSession
 		 */
 		public function __construct(Session $pSession) {
@@ -24,26 +22,38 @@
 		} // constructor
 
 		/**
-		 *
 		 * intègre le modèle de données dans l'ihm agence
+		 *
+		 * @param statement $pStmt
+		 * @param string $pFichier
 		 */
-		public function afficher() {
+		public function afficher($pStmt, $pFichier) {
 
-			parent::setContenu($this-> readContenu());
-			parent::readPage();
+			parent::setContenu($this-> readContenu($pStmt, $pFichier));
+			$this-> readPage();
 		} // function
 
 		/**
-		 *
 		 * intègre le modèle de données dans le bloc contenu
-		 *
+		 * 
+		 * @param statement $pStmt
+		 * @param string $pFichier
+		 * 
 		 * @return string du bloc contenu
 		 */
-		public function readContenu() {
-
-			ob_start();
-			require_once((parent::getFolderContenu()).'/contenu.php');
+		public function readContenu($pStmt, $pFichier) {
+			
+			// checkme [vince] code très moyen ! voir si on garde dans le futur
+			if($pFichier == 'fiche.php') {
 				
+				if(!$pStmt-> bind_result($nContenuNom, $nContenuAdresse, $nContenuPhone, $nContenuMail, $nContenuHoraire)) {
+					throw new SqlException($nStmt-> error, $nStmt-> errno);
+				} // if
+			} // if
+			
+			ob_start();
+			require_once((parent::getFolderContenu()).$pFichier);
+		
 		return ob_get_clean();
 		} // function
 		

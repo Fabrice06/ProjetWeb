@@ -38,15 +38,14 @@
 		} // function
 
 		/**
-		 *
-		 * propose nom, classe, nbplace du vehicule identifié par $pId
+		 * propose fiche voiture identifiée par son $pId
 		 *
 		 * @param integer $pId
 		 * 
 		 * @return mysqli statement
 		 */
 		public function findVehiculeById($pId) {
-			$nSql = 'select nomVehicule, desriptionVehicule, nbplaceVehicule '
+			$nSql = 'select nomVehicule, descriptionVehicule, nbPlacesVehicule, motorisationVehicule, prixVehicule '
 					.'from Vehicule '
 					.'where idVehicule=?';
 

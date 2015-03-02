@@ -82,7 +82,7 @@
 		 * @return string valeur propre
 		 */
 		protected function nettoyer($pValeur) {
-			return htmlspecialchars($pValeur, ENT_QUOTES, 'UTF-8', false); 
+			return htmlspecialchars(htmlentities($pValeur), ENT_QUOTES, 'UTF-8', false); 
 		}
 
 		/**

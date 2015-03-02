@@ -1,14 +1,9 @@
 <?php
 
 	/**
-	 * 
-	 * à réaliser
-	 * 
 	 * @file   vue_agence.php
 	 * 
 	 * @brief vue associée à l'entité agence
-	 * 
-	 * @todo [bob] s'inspirer du contrôleur vue_vehicule ??
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

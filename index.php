@@ -16,8 +16,6 @@
 	 * @file   index.php
 	 * 
 	 * @brief entrée du site (utilisation du concept de page unique)
-	 * 
-	 * @author vince
 	 */
 
 	// déclaration des variables de configuration

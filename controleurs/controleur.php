@@ -1,15 +1,12 @@
 <?php
 
 	/**
-	 * 
 	 * @file controleur.php
 	 * 
 	 * @brief C'est un intermédiaire entre le modèle et la vue.
 	 * 
 	 * Le contrôleur va demander au modèle les données, les analyser, prendre une décision
 	 * puis fournir les données à afficher via la vue.
-	 * 
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'activite.php');	

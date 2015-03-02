@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file ctrl_vehicule.php
 	 * 
 	 * @brief contrôleur associé à l'entité vehicule
-	 * 
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

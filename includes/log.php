@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file log.php
 	 *
 	 * @brief création d'un fichier log
-	 *
-	 * @author vince
 	 */
 
 	/**

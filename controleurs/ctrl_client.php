@@ -1,14 +1,9 @@
 <?php
 
 	/**
-	 * 
-	 * à réaliser
-	 * 
 	 * @file   ctrl_clien.php
 	 * 
 	 * @brief contrôleur associé à l'entité client
-	 * 
-	 * @todo [bob] s'inspirer du contrôleur ctrl_vehicule ??
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

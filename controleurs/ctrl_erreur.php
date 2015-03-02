@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file ctrl_erreur.php
 	 *
 	 * @brief contrôleur associé à l'entité erreur
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file vue_erreur.php
 	 * 
 	 * @brief vue associée à l'entité erreur
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

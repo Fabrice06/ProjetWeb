@@ -1,10 +1,7 @@
 <?php
 
 	/**
-	 *
 	 * @file config.php
-	 *
-	 * @author vince
 	 */
 	
 	// step d'avancement du développement proj(et) ou prod(uction)
@@ -24,6 +21,7 @@
 		
 	// arborescence du projet
 		define('FOLDER_CSS',     		'style/');
+		define('FOLDER_DATA',     		'data/');
 		define('FOLDER_IMG',     		'images/');
 		define('FOLDER_INCLUDE', 		'includes/');
 		define('FOLDER_MODELE',  		'modeles/');

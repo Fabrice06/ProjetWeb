@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file ctrl_home.php
 	 * 
 	 * @brief contrôleur associé à l'entité home
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

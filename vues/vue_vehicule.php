@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file vue_vehicule.php
 	 * 
 	 * @brief vue associée à l'entité vehicule
-	 * 
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

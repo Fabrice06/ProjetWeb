@@ -5,8 +5,6 @@
 	 * @file mdl_connexion.php
 	 * 
 	 * @brief modèle de données associé à l'entité connexion
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'people.php');

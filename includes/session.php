@@ -1,10 +1,7 @@
 <?php
 
 	/**
-	 *
 	 * @file session.php
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'activite.php');

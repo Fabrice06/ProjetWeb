@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file vue_home.php
 	 * 
 	 * @brief vue associée à l'entité home
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

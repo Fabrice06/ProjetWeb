@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file exception.php
 	 *
 	 * @brief héritage de la classe Exception
-	 * 
-	 * @author vince
 	 */
 
 	/**

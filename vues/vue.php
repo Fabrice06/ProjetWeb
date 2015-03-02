@@ -1,15 +1,12 @@
 <?php
 
 	/**
-	 *
 	 * @file vue.php
 	 *
 	 * @brief Cette partie est dédiée uniquement à l’affichage. 
 	 *
 	 * La vue se contente d'afficher les données qui lui sont transmises par le controleur.
 	 * On y retrouve essentiellement du code HTML mais aussi des boucles PHP.
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

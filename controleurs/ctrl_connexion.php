@@ -1,12 +1,7 @@
 <?php
 
-	/**
-	 * 
-	 * @file   ctrl_connexion.php
-	 * 
+	/** 
 	 * @brief contrôleur associé à l'entité connexion
-	 * 
-	 * @author vince
 	 */
 
 	require_once(FOLDER_INCLUDE.'session.php');

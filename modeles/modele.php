@@ -1,15 +1,12 @@
 <?php
 
 	/**
-	 *
 	 * @file modele.php
 	 *
 	 * @brief Cette partie gère les données métier.
 	 *
 	 * Son rôle est d’aller récupérer les informations 'brutes' dans la base de données,
 	 * de les organiser et de les assembler pour qu’elles puissent être traitées par le contrôleur.
-	 *
-	 * @author vince
 	 */
 
 	/**

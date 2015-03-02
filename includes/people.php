@@ -1,10 +1,7 @@
 <?php
 
 	/**
-	 *
 	 * @file people.php
-	 *
-	 * @author vince
 	 */
 
 	/**

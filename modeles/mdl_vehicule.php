@@ -1,12 +1,9 @@
 <?php
 
 	/**
-	 *
 	 * @file mdl_vehicule.php
 	 * 
 	 * @brief modèle de données associé à l'entité vehicule
-	 *
-	 * @author vince
 	 */
 
 	require_once(FOLDER_MODELE.'modele.php');

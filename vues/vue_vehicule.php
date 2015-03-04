@@ -43,7 +43,8 @@
 		 */
 		public function readContenu($pStmt, $pFichier) {
 			
-			// checkme [vince] code très moyen ! voir si on garde dans le futur
+			$nAccount= parent::getProprietaire()-> getAccount();
+			
 			if($pFichier == 'fiche.php') {
 
 				if(!$pStmt-> bind_result($nContenuNom, $nContenuDescription, $nContenuNbPlace, $nContenuMotorisation, $nContenuPrix)) {
@@ -52,10 +53,28 @@
 			} // if
 			
 			ob_start();
-			require_once((parent::getFolderContenu()).$pFichier);
+			require_once((parent::getFolderContenu()).$nAccount.'/'.$pFichier);
 		
 		return ob_get_clean();
 		} // function
+		
+// 		public function readContenu() {
+				
+// 			// valeur par défaut
+// 			$nContenuPrenom= '';
+				
+// 			$nAccount= parent::getProprietaire()-> getAccount();
+// 			if(($nAccount == 'membre') || ($nAccount == 'admin')){
+// 				$nContenuPrenom= parent::getProprietaire()-> getPrenom();
+// 			}
+				
+// 			ob_start();
+// 			require_once((parent::getFolderContenu()).$nAccount.'/contenu.php');
+		
+// 			return ob_get_clean();
+// 		} // function
+		
+		
 
 	} // class
 ?>

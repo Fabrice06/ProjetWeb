@@ -34,12 +34,14 @@
 			
 	// navigation du site
 		define('HREF_HOME',				'index.php?controleur=home');
-		
 		define('HREF_AGENCE',			'index.php?controleur=agence');
 		define('HREF_CLIENT',			'index.php?controleur=client');
 		define('HREF_COMPTE',			'index.php?controleur=connexion');
+		define('HREF_PARTENAIRE',    	'index.php?controleur=partenaire');
+		define('HREF_RECRUTE',    		'index.php?controleur=recrute');
 		define('HREF_RESERVATION',		'index.php?controleur=resa');
 		define('HREF_SERVICE',    		'index.php?controleur=service');
 		define('HREF_VEHICULE',    		'index.php?controleur=vehicule');
+		
 		
 ?>

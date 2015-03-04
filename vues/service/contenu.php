@@ -1,3 +1,5 @@
+
+
 <article class="content">
 <h1>Les options LocaLoco pour vous faciliter votre location de voiture</h1>
 <img src="data/service/serv_1.jpg" alt="Photo d\'illustration">

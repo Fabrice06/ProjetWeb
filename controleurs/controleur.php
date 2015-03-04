@@ -17,9 +17,12 @@
 	require_once(FOLDER_CONTROLEUR.'ctrl_connexion.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_erreur.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_home.php');
-	require_once(FOLDER_CONTROLEUR.'ctrl_resa.php');
+	require_once(FOLDER_CONTROLEUR.'ctrl_partenaire.php');
+	require_once(FOLDER_CONTROLEUR.'ctrl_recrute.php');
+	require_once(FOLDER_CONTROLEUR.'ctrl_resa.php');	
 	require_once(FOLDER_CONTROLEUR.'ctrl_service.php');
 	require_once(FOLDER_CONTROLEUR.'ctrl_vehicule.php');
+	
 
 	/**
 	 *
@@ -62,6 +65,14 @@
 						
 				case 'connexion':
 					$nControleur= 'CtrlConnexion';
+					break;
+					
+				case 'partenaire':
+					$nControleur= 'CtrlPartenaire';
+					break;
+					
+				case 'recrute':
+					$nControleur= 'CtrlRecrute';
 					break;
 
 				case 'resa':

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet"  media="screen" type="text/css" href="<?= FOLDER_CSS.'style_screen.css' ?>" />
+<link rel="stylesheet"  media="screen" type="text/css" href="<?= FOLDER_CSS.'style.css' ?>" />
 <title><?= $titrePage ?></title>
 </head>
 	
@@ -10,7 +10,7 @@
 <div class="container">
 
 	<header>
-		<h1><a href="<?= HREF_HOME ?>">Ben voyons ! <strong>élu produit de l'année</strong></a></h1>
+		<h1><a href="<?= HREF_HOME ?>">LocaLoco ! <strong>la location Fun</strong></a></h1>
 		<nav><ul>
 			<li><a href="<?= HREF_HOME ?>">Accueil</a></li>
 			<li><a href="<?= HREF_RESERVATION ?>">Réserver</a></li>
@@ -23,37 +23,34 @@
 		
 	<aside><article>
 		<hgroup>
-			<h2>Featured Article</h2>
-			<h3><a href="#">aaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa a a a aaaaaaaaa</a></h3>
+			<h2>Location de voiture</h2>
+			<h3><a href="<?= HREF_VEHICULE ?>">Faites vous plaisir !!!!</a></h3>
 		</hgroup>
-		<p>bbbbbbbbbbbb bbbbbb bbbbbbbb bbbb  b b b b bbbbbbbbbbbbb</p>
+		<p>Louez une voiture FUN ....</p>
 	</article></aside>
 
-	<section class="content">
+	
 		<?= $nPageBlocContenu ?>
-	</section>
+	
 
  	<footer>
 		<ul>
-	        <li><h2>gauche</h2></li>
-	        <li><a href="#" rel="external">xxxxxxx</a></li>
-	        <li><a href="#" rel="external">xxxxxxxx</a></li>
-	        <li><a href="#" rel="external">xxxxxxxxx</a></li>
+	        <li><h2>Divers</h2></li>
+	        <li><a href="<?= HREF_HOME ?>" rel="external">Accueil</a></li>
+	        <li><a href="<?= HREF_RESERVATION ?>" rel="external">Réserver</a></li>
+	        <li><a href="<?= HREF_COMPTE ?>" rel="external">Mon compte</a></li>
       	</ul>
       	<ul>
 	        <li><h2>&nbsp;</h2></li>
-	        <li><a href="#" rel="external">yy</a></li>
-	        <li><a href="#" rel="external">yyyyyyyyyyyy</a></li>
-	        <li><a href="#" rel="external">yyyyyyy</a></li>
-	        <li><a href="#" rel="external">yyyyyyyy</a></li>
-	        <li><a href="#" rel="external">yyyyyyyyyyyyyyy</a></li>
+	        <li><a href="<?= HREF_AGENCE ?>" rel="external">Agence</a></li>
+	        <li><a href="<?= HREF_VEHICULE ?>" rel="external">Véhicules</a></li>
+	        <li><a href="<?= HREF_SERVICE ?>" rel="external">Services</a></li>
       	</ul>
       	<ul>
-	        <li><h2>droite</h2></li>
-	        <li><a href="#" rel="external">zzzzz</a></li>
-	        <li><a href="#" rel="external">zzzzzzzzz</a></li>
-	        <li><a href="#" rel="external">zzzz</a></li>
-	        <li><a href="#" rel="external">zzzzzzz</a></li>
+	        <li><h2>Site</h2></li>
+	        <li><a href="#" rel="external">LocaLoco recrute</a></li>
+	        <li><a href="#" rel="external">Nos partenaires</a></li>
+	        <li><a href="#" rel="external">Les + LocaLoco</a></li>
       	</ul>
 	</footer>
 		

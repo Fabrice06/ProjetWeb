@@ -6,4 +6,7 @@
 	<p>Description :  <?= parent::nettoyer($nContenuDescription) ?></p>
 	<p>Prix :  <?= parent::nettoyer($nContenuPrix) ?> euro</p>
 <?php } ?>
+
+<p><a href="">réserver</a></p>
+
 </article>

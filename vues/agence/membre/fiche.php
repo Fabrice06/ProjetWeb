@@ -6,4 +6,7 @@
     	<p>Mail : <?= parent::nettoyer($nContenuMail) ?></p>
     	<p><?= parent::nettoyer($nContenuHoraire) ?></p>
 	<?php } ?>
+	
+	<p><a href="">réserver</a></p>
+	
 </article>

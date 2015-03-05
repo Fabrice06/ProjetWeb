@@ -9,7 +9,7 @@
 				<img src="<?= FOLDER_DATA_AGENCE.parent::nettoyer($nRow['imageAgence']) ?>" alt="<?= "Agence ".parent::nettoyer($nRow['nomAgence']) ?>">
 			<?="  ".parent::nettoyer($nRow['nomAgence']) ?></a></p>
 			
-			<p><a href="">suppression</a></p>
+			<p><a href="">supprimer</a></p>
 			
 			</li>
 		<?php } ?>

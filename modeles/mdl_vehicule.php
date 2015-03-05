@@ -27,7 +27,7 @@
 		 * @throws SqlException en cas d'échec
 		 */
 		public function findVehicules() {
-			$nSql = 'select idVehicule, nomVehicule '
+			$nSql = 'select idVehicule, nomVehicule, imageVehicule '
 					.'from Vehicule '
 					.'order by nomVehicule asc';
 

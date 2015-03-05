@@ -6,7 +6,7 @@
 		<input name="mail" type="text" required value="<?= $nContenuValueMail ?>"/><?= $nContenuMsgMail ?></p>
 					
 	<p><label for="mdp">Mot de passe:</label>
-		<input name="mdp" type="text" required value="<?= $nContenuValueMdp ?>"/><?= $nContenuMsgMdp ?></p>
+		<input name="mdp" type="password" required value="<?= $nContenuValueMdp ?>"/><?= $nContenuMsgMdp ?></p>
 		
 	<input type="hidden" name="action" value="valider"/>
 	

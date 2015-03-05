@@ -50,7 +50,6 @@
 	        <li><h2>Site</h2></li>
 	        <li><a href="<?= HREF_RECRUTE ?>" rel="external">LocaLoco recrute</a></li>
 	        <li><a href="<?= HREF_PARTENAIRE ?>" rel="external">Nos partenaires</a></li>
-	        <li><a href="#" rel="external">Les + LocaLoco</a></li>
       	</ul>
 	</footer>
 		

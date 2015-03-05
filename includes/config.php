@@ -27,7 +27,7 @@
 		define('FOLDER_MODELE',  		'modeles/');
 		define('FOLDER_VUE',     		'vues/');
 		define('FOLDER_CONTROLEUR',		'controleurs/');
-		define('FOLDER_DATA_VOITURE',	'data/voiture/');
+		define('FOLDER_DATA_VEHICULE',	'data/vehicule/');
 		define('FOLDER_DATA_AGENCE',	'data/agence/');
 		define('FOLDER_DATA_SERVICE',	'data/service/');
 		

@@ -43,7 +43,8 @@
 		 */
 		public function readContenu($pStmt, $pFichier) {
 			
-			// checkme [vince] code très moyen ! voir si on garde dans le futur
+			$nAccount= parent::getProprietaire()-> getAccount();
+			
 			if($pFichier == 'fiche.php') {
 				
 				if(!$pStmt-> bind_result($nContenuNom, $nContenuAdresse, $nContenuPhone, $nContenuMail, $nContenuHoraire)) {
@@ -52,7 +53,7 @@
 			} // if
 			
 			ob_start();
-			require_once((parent::getFolderContenu()).$pFichier);
+			require_once((parent::getFolderContenu()).$nAccount.'/'.$pFichier);
 		
 		return ob_get_clean();
 		} // function

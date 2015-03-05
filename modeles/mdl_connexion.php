@@ -29,9 +29,9 @@
 		 */
 		public function getPeopleByMailByMdp(People $pPeople) {
 			
-			$nSql = 'select id, nom, sprenom, compte '
-					.'from people '
-						.'where mail=? and mdp=?';
+			$nSql = 'select idclient, nomclient, prenomclient, accountclient '
+					.'from client '
+						.'where mailclient=? and pwdclient=?';
 
 			if(!$nStmt= parent::getBdd()-> prepare($nSql)) {
 				throw new SqlException(parent::getBdd()-> error, parent::getBdd()-> errno);

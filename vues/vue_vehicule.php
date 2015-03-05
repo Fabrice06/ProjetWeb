@@ -58,22 +58,7 @@
 		return ob_get_clean();
 		} // function
 		
-// 		public function readContenu() {
-				
-// 			// valeur par défaut
-// 			$nContenuPrenom= '';
-				
-// 			$nAccount= parent::getProprietaire()-> getAccount();
-// 			if(($nAccount == 'membre') || ($nAccount == 'admin')){
-// 				$nContenuPrenom= parent::getProprietaire()-> getPrenom();
-// 			}
-				
-// 			ob_start();
-// 			require_once((parent::getFolderContenu()).$nAccount.'/contenu.php');
-		
-// 			return ob_get_clean();
-// 		} // function
-		
+
 		
 
 	} // class

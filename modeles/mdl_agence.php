@@ -27,7 +27,7 @@
 		 * @throws SqlException en cas d'échec
 		 */
 		public function findAgences() {
-			$nSql = 'select idAgence, nomAgence '
+			$nSql = 'select idAgence, nomAgence, imageAgence '
 					.'from Agence '
 					.'order by nomAgence asc';
 		
